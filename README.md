@@ -51,7 +51,6 @@ Add the following configuration to the `config.js` file of your MagicMirror:
 ```javascript
 {
     module: "MMM-Shairportsync-color",
-    position: "fullscreen_above", // Recommended placement
     config: {
         brightnessFactor: 1.0, // Adjust overall brightness (default: 1.0)
         paletteIndex: "primary", // Default color from the palette (options: primary, secondary, accent, highlight)
