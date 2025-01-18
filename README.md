@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="img/one.jpg" alt="Image 1" width="30%" />
-  <img src="img/two.jpg" alt="Image 2" width="30%" />
-  <img src="img/three.jpg" alt="Image 3" width="30%" />
+  <img src="img/one.jpg" alt="Image 1" width="33%" />
+  <img src="img/two.jpg" alt="Image 2" width="33%" />
+  <img src="img/three.jpg" alt="Image 3" width="33%" />
 </p>
 
 # MMM-Shairportsync-color
@@ -124,10 +124,10 @@ Feel free to customize the module by editing the following files:
 ## Credits
 
 - **Shairport Sync**: By Mike Brady
-- **MMM-ShairportMetadata**: By sdmydbr9
+- **MMM-ShairportMetadata**: By surekap
 - **MMM-OnSpotify**: By Fabrizz
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License.
 
