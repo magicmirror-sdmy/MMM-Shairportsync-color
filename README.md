@@ -100,5 +100,5 @@ Feel free to customize the module by editing the following files:
 - **MMM-OnSpotify**: By Fabrizz
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. 
 
