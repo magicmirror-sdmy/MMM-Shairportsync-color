@@ -1,0 +1,15 @@
+{
+  "name": "MMM-Shairportsync-color",
+  "version": "1.0.0",
+  "description": "A MagicMirror module to dynamically update text colors based on Shairport album art.",
+  "main": "node_helper.js",
+  "scripts": {
+    "start": "node node_helper.js"
+  },
+  "author": "Dr. S. Debbarma",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "fs": "^0.0.1-security"
+  }
+}
