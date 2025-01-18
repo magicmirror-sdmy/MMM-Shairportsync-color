@@ -95,20 +95,6 @@ Add the following configuration to the `config.js` file of your MagicMirror:
 3. The album art is passed to a Python script, which extracts the dominant color palette using the `ColorThief` library.
 4. The extracted color palette is sent back to the frontend, where it updates the MagicMirror's theme dynamically.
 
-## Examples
-
-Here are some examples of the module in action:
-
-### Example 1
-
-
-
-### Example 2
-
-
-
-### Example 3
-
 
 
 ## File Structure
