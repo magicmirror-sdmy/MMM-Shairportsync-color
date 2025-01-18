@@ -12,7 +12,7 @@
 ## Requirements
 
 1. MagicMirror² installed and running.
-2. [Shairport-sync](https://github.com/mikebrady/shairport-sync.git) installed and configured to provide metadata and this module [MMM-Shairportsync](https://github.com/sdmydbr9/MMM-ShairportMetadata.git)
+2. [Shairport-sync](https://github.com/mikebrady/shairport-sync.git) installed and configured to provide metadata and this module [MMM-ShairportMetadata](https://github.com/sdmydbr9/MMM-ShairportMetadata.git)
 3. Python 3 with the `Pillow` and `colorthief` libraries installed (for image processing).
 
 ## Installation
