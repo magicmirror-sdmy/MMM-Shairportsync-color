@@ -1,7 +1,7 @@
 /* Magic Mirror
  * Module: MMM-Shairportsync-color
  *
- * By Your Name
+ * Dr. S
  * MIT Licensed.
  */
 
@@ -28,6 +28,7 @@ module.exports = NodeHelper.create({
         // Ensure base64Image is a string before writing
         if (typeof base64Image !== "string") {
             console.error("Invalid input: base64Image must be a string.");
+            pythonProcess.kill(); // Ensure process is terminated
             return;
         }
 
@@ -56,6 +57,9 @@ module.exports = NodeHelper.create({
             } else {
                 console.error(`Python process exited with code ${code}`);
             }
+
+            // Ensure process is cleaned up
+            pythonProcess.kill();
         });
     },
 });
