@@ -6,7 +6,10 @@
 
 # MMM-Shairportsync-color
 
-MMM-Shairportsync-color is a MagicMirror module that dynamically updates MM theme of your MagicMirror display based on the dominant colors of the album art of the currently playing song. This is achieved by extracting the color palette from the album art and applying it to the MagicMirror interface. The module is designed to work in conjunction with [Shairport Sync](https://github.com/mikebrady/shairport-sync.git) with metadata enabled and relies on the [MMM-ShairportMetadata](https://github.com/sdmydbr9/MMM-ShairportMetadata.git) module for metadata integration. The module is inspired by [MMM-OnSpotify](https://github.com/Fabrizz/MMM-OnSpotify.git).
+MMM-Shairportsync-color is a MagicMirror module that dynamically updates MM theme of your MagicMirror display based on the dominant colors of the album art of the currently playing song. This is achieved by extracting the color palette from the album art and applying it to the MagicMirror interface. The module is designed to work in conjunction with [Shairport Sync](https://github.com/mikebrady/shairport-sync.git) with metadata enabled and relies on the [MMM-ShairportMetadata](https://github.com/magicmirror-sdmy/MMM-ShairportMetadata.git) module for metadata integration. The module is inspired by [MMM-OnSpotify](https://github.com/Fabrizz/MMM-OnSpotify.git).
+
+
+
 
 ## Features
 
@@ -29,7 +32,7 @@ MMM-Shairportsync-color is a MagicMirror module that dynamically updates MM them
 
 2. **MMM-ShairportMetadata Module**
 
-   - Install the MMM-ShairportMetadata module from [here](https://github.com/sdmydbr9/MMM-ShairportMetadata.git).
+   - Install the MMM-ShairportMetadata module from [here](https://github.com/magicmirror-sdmy/MMM-ShairportMetadata.git).
 
 3. **Python Dependencies**
 
@@ -45,7 +48,7 @@ MMM-Shairportsync-color is a MagicMirror module that dynamically updates MM them
 
    ```bash
    cd ~/MagicMirror/modules
-   git clone https://github.com/sdmydbr9/MMM-Shairportsync-color.git
+   git clone https://github.com/magicmirror-sdmy/MMM-Shairportsync-color.git
    ```
 
 2. Navigate to the module directory:
