@@ -96,7 +96,7 @@ Feel free to customize the module by editing the following files:
 
 ## Credits
 - **Shairport Sync**: By Mike Brady
-- **MMM-ShairportMetadata**: By sdmydbr9
+- **MMM-ShairportMetadata**: By surekap
 - **MMM-OnSpotify**: By Fabrizz
 
 ## License
