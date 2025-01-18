@@ -3,7 +3,7 @@
 /* Magic Mirror
  * Module: MMM-Shairportsync-color
  *
- * By Your Name
+ * By Dr. S. Debbarma
  * MIT Licensed.
  */
 
