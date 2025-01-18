@@ -44,12 +44,16 @@ Add the module to the `config.js` file of your MagicMirror² installation. Below
 
 ```javascript
 {
-  module: 'MMM-Shairportsync-color',
-  config: {
-    brightness: 1.5, // Adjust text brightness (e.g., 1.0 for default, 1.5 for brighter)
-    paletteIndex: 0, // Use palette index (e.g., 0 for the most dominant color)
-    namedColor: "primary", // Alternatively, use named colors like "primary" or "accent"
-  }
+    module: "MMM-Shairportsync-color",
+    config: {
+        brightnessFactor: 1.8,
+        brightnessOverrides: { // Adjustments for specific text types
+            dimmed: 1.2, // Slightly brighter for dimmed text
+            small: 1.4, // Brighter for small text
+            extraSmall: 1.6, // Even brighter for extra-small text
+         paletteIndex: "primary" // Choose from: "primary", "secondary", "accent", "highlight"
+                           }
+        }
 }
 ```
 
