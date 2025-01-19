@@ -42,22 +42,23 @@ def extract_color_palette(base64_image, normalization_method="gamma"):
         image_data = base64.b64decode(base64_image.split(",")[1])
         with BytesIO(image_data) as image_file:
             with Image.open(image_file) as image:
+                if image.size[0] == 0 or image.size[1] == 0:
+                    return json.dumps({"error": "Invalid image size"})
+                
                 image = image.convert("RGB")
                 image.thumbnail((200, 200))
-
+                
                 with BytesIO() as resized_image_file:
                     image.save(resized_image_file, format="JPEG")
                     resized_image_file.seek(0)
-
                     color_thief = ColorThief(resized_image_file)
                     palette = color_thief.get_palette(color_count=6)
-
+        
         normalized_palette = normalize_palette(palette, method=normalization_method)
-
         return json.dumps(normalized_palette)
-
     except Exception as e:
         return json.dumps({"error": str(e)})
+
 
 if __name__ == "__main__":
     import sys
