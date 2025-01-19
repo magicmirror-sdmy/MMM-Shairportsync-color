@@ -1,23 +1,33 @@
-/* Magic Mirror
- * Module: MMM-Shairportsync-color
- *
- * Dr. S
- * MIT Licensed.
- */
-
 const NodeHelper = require("node_helper");
 const { spawn } = require("child_process");
+const crypto = require("crypto");
 
 module.exports = NodeHelper.create({
+    processedImages: new Set(), // Store hashes of processed images
+
     start: function () {
         console.log("Starting node_helper for module: MMM-Shairportsync-color");
     },
 
     socketNotificationReceived: function (notification, payload) {
         if (notification === "PROCESS_IMAGE") {
+            const imageHash = this.getImageHash(payload); // Generate a hash for the image
+
+            // Check if the image has already been processed
+            if (this.processedImages.has(imageHash)) {
+                console.log("Image already processed, skipping...");
+                return;
+            }
+
             console.log("Processing image with Python...");
-            this.processImage(payload); // Pass the image string to processImage
+            this.processedImages.add(imageHash); // Add the hash to the processed set
+            this.processImage(payload);
         }
+    },
+
+    getImageHash: function (base64Image) {
+        // Generate a unique hash for the image data
+        return crypto.createHash("md5").update(base64Image).digest("hex");
     },
 
     processImage: function (base64Image) {
