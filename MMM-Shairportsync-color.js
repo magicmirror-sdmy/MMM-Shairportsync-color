@@ -24,10 +24,14 @@ Module.register("MMM-Shairportsync-color", {
 
     notificationReceived: function (notification, payload) {
         if (notification === "DATA_BROADCAST") {
-            // Send image data to node_helper for processing
-            this.sendSocketNotification("PROCESS_IMAGE", payload.image);
+            if (typeof payload.image === "string" && payload.image.startsWith("data:image")) {
+                this.sendSocketNotification("PROCESS_IMAGE", payload.image);
+            } else {
+                Log.error("Invalid image data received. Skipping processing.");
+            }
         }
     },
+    
 
     socketNotificationReceived: function (notification, payload) {
         if (notification === "COLOR_PALETTE") {
